@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: SF Pro Text Light;
     src: url(FontsFree-Net-SFProText-Light-1.ttf);
@@ -22,6 +23,7 @@ body{
     position: fixed;
     width: 100vw;
     min-width: 410px;
+    z-index: 999;
 }
 
 .header-nav{
@@ -231,11 +233,26 @@ body{
     font-size: 2rem;
 }
 
+ul{
+    margin: 0 auto;
+}
+.splide__slide img {
+    margin: 0px auto;
+    width: 90%;
+    height: auto;
 
+} 
 
-
-
-
+.my-slider-progress {
+    background: #ccc;
+  }
+  
+.my-slider-progress-bar {
+    background: greenyellow;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
+  }
 
 
 

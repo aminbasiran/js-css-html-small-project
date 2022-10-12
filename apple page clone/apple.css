@@ -1,0 +1,241 @@
+@font-face {
+    font-family: SF Pro Text Light;
+    src: url(FontsFree-Net-SFProText-Light-1.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    font-family: SF Pro Text Light;
+    font-size: 16px;
+    overflow-x: hidden;
+    
+}
+
+.header{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100vw;
+    min-width: 410px;
+    
+}
+
+.header-nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 48px;
+    max-height: 44px;
+    min-width: 410px;
+}
+
+/* .container-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.menu{
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 0.8rem;
+    color: rgb(210, 210, 210);
+    
+}
+
+.hamburger{
+    position: absolute;
+}
+
+#empty-header{
+    width: 100vw;
+    height: 48px;
+    max-height: 44px;
+
+}
+
+.header-second{
+    min-width: 410px;
+    width: 100vw;
+    height: 48px;
+    max-height: 44px;
+    background-color: #f0f0f0c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    /* padding: 70px 0; */
+}
+
+.header-second h1{
+    font-size: 0.8rem;
+}
+
+.header-second h1 a{
+    text-decoration: none;
+    color: rgb(41, 99, 226);
+
+}
+
+.header-second h1 a:hover{
+    text-decoration: underline;
+}
+
+.section{
+    min-width: 410px;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section.top-hero{
+    background-image: url(https://www.apple.com/my/home/images/heroes/iphone-14/hero_iphone14__fjmsqstr1ceq_large_2x.jpg);
+}
+
+.section.middle-hero{
+    background-image: url(https://www.apple.com/v/home/as/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_large_2x.jpg);
+}
+.section.bottom-hero{
+    background-image: url(https://www.apple.com/my/home/images/heroes/apple-watch-ultra/hero_apple_watch_ultra__dtz0f3e8oscy_large_2x.jpg);
+}
+.section .text-container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 8vh;
+}
+
+.section .text-container h1{
+    font-size: 3.8rem;
+    font-weight: bolder;
+}
+
+.section .text-container h3{
+    font-size:1.4rem;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+.text-container h3 .links-container{
+    margin-top: 10px;
+}
+
+.text-container h3 .links-container a{
+    font-size:1.3rem;
+    text-decoration: none;
+    padding: 0px 15px;
+    color: rgb(41, 99, 226);
+}
+
+.section.middle-hero .text-container h1,.section.middle-hero .text-container h2{
+    color: white;
+}
+
+.section.bottom-hero .text-container h1:nth-child(2){
+    color: rgb(255, 136, 0);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+
+}
+.section.bottom-hero .text-container h1:nth-child(1){
+    /* color: rgb(255, 136, 0); */
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(400px,600px));
+    grid-template-rows: repeat(3,613.67px);
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100vw;
+    height: inherit;
+    place-content: center;
+    padding: 20px 20px;
+}
+
+.cell{
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.cell#topleft{
+    background-image: url(https://www.apple.com/v/home/as/images/promos/airpods-pro/promo_airpods_pro_avail__gaxggskofx6y_large_2x.jpg);
+}
+
+.cell#topright{
+    background-image: url(https://www.apple.com/v/home/as/images/promos/apple-watch-series-8/promo_apple_watch_series_8_order__bo2d1i4q0mqa_large_2x.jpg);
+}
+
+.cell#middleleft{
+    background-image: url(https://www.apple.com/v/home/as/images/promos/apple-fitness-plus-iphone/promo-apple-fitness-plus-iphone__bzeal882mv7m_large_2x.jpg);
+}
+
+.cell#middleright{
+    background-image: url(https://www.apple.com/my/home/images/promos/apple-watch-se/promo_apple_watch_se_avail__e5unstfyokae_large_2x.jpg);
+}
+
+.cell#bottomleft{
+    background-image: url(https://www.apple.com/v/home/as/images/promos/education-value/promo_edu__efkxh2h1luoi_large_2x.jpg);
+}
+
+.cell#bottomright{
+    background-image: url(https://www.apple.com/v/home/aq/images/promos/arcade-jetpack-joyride/promo_jetpack_joyride__ewcvyoggt4cy_large_2x.jpg);
+}
+
+.cell{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 8vh;
+}
+
+.cell:nth-child(5){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topleft .text-container h1{
+    color: white;
+}
+
+#topleft .text-container h2{
+    color: white;
+}
+
+#topleft .text-container h3{
+    color: grey;
+}
+
+#topright .text-container h1{
+    color: white;
+}
+
+#topright .text-container h2{
+    color: white;
+}
+
+#topright .text-container h3{
+    color: grey;
+}
+
+
+
+
+
+
+
+
+

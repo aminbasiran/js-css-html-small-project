@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's play tictactoe</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="wrapper">
+            <div class="grid one" data-block></div>
+            <div class="grid two" data-block></div>
+            <div class="grid three" data-block></div>
+            <div class="grid four" data-block></div>
+            <div class="grid five" data-block></div>
+            <div class="grid six" data-block></div>
+            <div class="grid seven" data-block></div>
+            <div class="grid eight" data-block></div>
+            <div class="grid nine" data-block></div>
+        </div>
+    </div>
+    <div class="winningScreen">
+        <div class="winMessage" id="xowinMessage"></div>
+        <button class="button" type="button">Restart</button>
+    </div>
+    <div class="drawScreen">
+        <div class="drawMessage" id="drawMessage"></div>
+        <button class="button" type="button">Restart</button>
+    </div>
+    
+    <script defer src="tictactoe.js"></script>
+</body>
+</html>

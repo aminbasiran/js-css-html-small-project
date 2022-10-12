@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="findDays.js" defer ></script>
+    <link rel="stylesheet" href="findDays.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <form action="" class="form">
+            <h1>Find the day</h1>
+            <label for="date" hidden>date</label><br>
+            <input onkeyup="if(value<0) value=0"  max="31" class="date" type="number" name="date" placeholder="enter date"><br><br>
+            <label for="month" hidden>month</label>
+            <input onkeyup="if(value<0) value=0"  max="12" class="month" type="number" name="month" placeholder="enter month"><br><br>
+            <label for="year" hidden>year</label>
+            <input class="year" type="number" name="year" placeholder="enter year"><br><br>
+            <button class="enterButton" type="button">enter</button><br>
+            <h2 class="result"></h2>
+            <h2 class="resultAge"></h2>
+        </form>
+    </div>
+    
+</body>
+</html>

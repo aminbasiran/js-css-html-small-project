@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    .btn{
+            @apply w-try text-green-600 absolute text-center h-try text-2xl;
+    }
+}
+
+
+    

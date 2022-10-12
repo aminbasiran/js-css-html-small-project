@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+body{
+    background:rgb(3, 3, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.circle{
+    /* background-color:white ; */
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position:relative;
+    /* border: 20px solid rgb(207, 30, 30); */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  */
+}
+
+.hand{
+    position:absolute;
+    left:50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    transform-origin: 50% 100%;
+}
+
+ .hand.minute{
+    width: 15px;
+    height: 180px;
+    background-color: rgb(231, 231, 35);
+    /* transform: rotate(359deg); */
+    z-index: 1;
+}
+
+.hand.hour{
+    width: 15px;
+    height: 140px;
+    background-color: rgb(0, 252, 88);
+    z-index: 2;
+    /* transform: rotate(90deg); */
+    
+    
+}
+
+.hand.second{
+    width: 5px;
+    height: 200px;
+    background-color: rgb(240, 9, 9);
+    z-index:3;
+    /* transform: rotate(180deg); */
+}
+
+
+.mid{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(197, 197, 197);
+    z-index: 4;
+    border-radius: 30%;
+} 
+
+ .digit{
+    /* background-color: beige; */
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    
+    /* --rotation: 0;
+    transform: rotate(var(--rotation)); */
+}
+
+.digit.number1{transform:rotate(30deg)}
+.digit.number2{transform:rotate(60deg);}
+.digit.number3{transform:rotate(90deg);}
+.digit.number4{transform:rotate(120deg);}
+.digit.number5{transform:rotate(150deg);}
+.digit.number6{transform:rotate(180deg);}
+.digit.number7{transform:rotate(210deg);}
+.digit.number8{transform:rotate(240deg);}
+.digit.number9{transform:rotate(270deg);}
+.digit.number10{transform:rotate(300deg);}
+.digit.number11{transform:rotate(330deg);}
+

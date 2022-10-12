@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    /* background-color: grey; */
+    width: 600px;
+    height: 600px;
+    display: grid;
+    place-items: center;;
+
+}
+
+.circle{
+    
+    transform-origin: center;
+    transform: rotate(-90deg);
+    stroke-linecap:butt;
+}
+
+.circle.hour{
+    stroke-dasharray: 628.4px;
+    
+    
+    
+    /* stroke-dashoffset:90; */
+}
+
+.circle.minute{
+    stroke-dasharray: 816.92px;
+    /* stroke-dashoffset:90; */
+}
+
+.circle.second{
+    stroke-dasharray: 1005.44px;
+    /* stroke-dashoffset:990; */
+}
+
+.text{
+    position:absolute;
+}

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+    .btn {
+      @apply my-0 mx-2.5 py-2.5 px-2.5 bg-transparent rounded-2xl cursor-pointer;
+    }
+  } */

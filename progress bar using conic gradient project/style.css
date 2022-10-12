@@ -1,0 +1,43 @@
+*,*:after,*:before{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+/* .container{
+    width:400px;
+    height:400px;
+    background-color:grey;
+    display: grid;
+    place-items: center;
+  } */
+  
+  .circle{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    
+  }
+  
+.circle:before{
+    content:'';
+    height: 250px;
+    width: 250px;
+    background-color:white;
+    border-radius:50%;
+}
+
+.text{
+  position:absolute;
+  font-weight: bolder;
+  font-size: 2rem;
+}

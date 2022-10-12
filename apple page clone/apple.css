@@ -22,7 +22,6 @@ body{
     position: fixed;
     width: 100vw;
     min-width: 410px;
-    
 }
 
 .header-nav{
@@ -228,7 +227,7 @@ body{
 }
 
 #topright .text-container h3{
-    color: grey;
+    color: white;
 }
 
 

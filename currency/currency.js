@@ -14,4 +14,4 @@ const convertValue = async (initCurrency,finalCurrency ,amount) =>{
 
 }
 
-convertValue("USD","MYR",2).to
+convertValue("USD","MYR",2)

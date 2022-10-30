@@ -36,5 +36,5 @@ function setClock(){
     textElement.innerText=`${hour}:${minute}:${second}`
 }
 
-setInterval(setClock,1000)
+setInterval(setClock,3000)
 
